@@ -16,10 +16,14 @@ w = myOLED.get_lcd_width()
 h = myOLED.get_lcd_height()
 
 #Display Function
-def display(word):
+def display(word, word2):
 	myOLED.clear(myOLED.PAGE)
-	myOLED.print(word)
 	myOLED.set_cursor(0,0)
+	myOLED.print(word)
+	
+	myOLED.set_cursor(0, 20)
+	myOLED.print(word2)
+	
 	myOLED.display()
 	
 
